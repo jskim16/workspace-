@@ -3,17 +3,6 @@
 ## workspace의 개념
 [참고문서](https://musma.github.io/2019/04/02/yarn-workspaces.html)<br>
 Workspace는 SPA에서 각 앱들이 같은 모듈을 공유하고 서로를 참조할 수 있게 하는 공간이다. 앱 개발시 Workspace는 루트 폴더에 위치할 수 있는 yarn의 기능이며 Workspace를 통해 각 앱들은 루트의 node modules를 공유하면서 일부 devDependencies에 따라 소수의 모듈만을 앱 내에 받아 사용하게 되며 Workspace의 목록에 등록된 앱들이 모듈처럼 사용될 수 있게 만들어준다.
-```vue.js
-//nuxt.config.js
-export default {
-  mode: 'universal',
-  ssr: true,
-  ...
-}
-  ```
-
-nuxt로 프로젝트를 구동시켰을 때 spa모드로 구동했을 경우 페이지에 관한 렌더링이 소스 코드에 없었지만 universe모드로 구동했을 때 페이지 렌더링이 소스 코드에 올라온 것을 확인하였다.
-
 
 ## Workspace의 구현방법
 SPA프로젝트의 루트 폴더에 `package.json`을 생성하거나 이미 있는 것을 사용한다. 이곳에서 앱들을 Workspace에 등록한다.
