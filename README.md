@@ -5,6 +5,8 @@
 Workspace는 SPA에서 각 앱들이 같은 모듈을 공유하고 서로를 참조할 수 있게 하는 공간이다. 앱 개발시 Workspace는 루트 폴더에 위치할 수 있는 yarn의 기능이며 Workspace를 통해 각 앱들은 루트의 node modules를 공유하면서 일부 devDependencies에 따라 소수의 모듈만을 앱 내에 받아 사용하게 되며 Workspace의 목록에 등록된 앱들이 모듈처럼 사용될 수 있게 만들어준다.
 
 ## Workspace의 사용 목적
+* 목적1
+* 목적2
 
 ## Workspace의 구현방법
 SPA프로젝트의 루트 폴더에 `package.json`을 생성하거나 이미 있는 것을 사용한다. 이곳에서 앱들을 Workspace에 등록한다.
@@ -31,6 +33,8 @@ SPA프로젝트의 루트 폴더에 `package.json`을 생성하거나 이미 있
 Worspace의 동작을 확인하기 위해 깃허브에 올라온 [데모](https://github.com/anuroopjoy/npm7-sample)<br>를 이용해 동작을 확인해 보았다. 원본에는 루트의 `package.json`에 libs 하위 폴더만 추가되었기 때문에 apps의 하위 폴더도 등록을 해주고 돌려본 결과와 원본을 비교해보았다. 결론은 둘 다 같은 결과를 얻을 수 있었다. 이유는 Workspace에 등록 후 yarn이 libs의 하위 폴더에 있는 프로젝트들을 로컬 npm 패키지로 인식해 관리하기 때문에 앱들이 yarn start로 서버를 돌릴 때 같은 루트에 있는 앱들이 libs를 사용할 수 있게 된다. 다만 apps를 등록하지 않았을 경우 앱들은 별도로 자신의 node_modules가 필요해진다.
 
 ## Workspace 사용시 장점
+* 장점1
+* 장점2
 
 
 
