@@ -31,8 +31,8 @@ SPA프로젝트의 루트 폴더에 `package.json`을 생성하거나 이미 있
 Worspace의 동작을 확인하기 위해 깃허브에 올라온 [데모](https://github.com/anuroopjoy/npm7-sample)<br>를 이용해 동작을 확인해 보았다. 원본에는 루트의 `package.json`에 libs 하위 폴더만 추가되었기 때문에 apps의 하위 폴더도 등록을 해주고 돌려본 결과와 원본을 비교해보았다. 결론은 둘 다 같은 결과를 얻을 수 있었다. 이유는 Workspace에 등록 후 yarn이 libs의 하위 폴더에 있는 프로젝트들을 로컬 npm 패키지로 인식해 관리하기 때문에 앱들이 yarn start로 서버를 돌릴 때 같은 루트에 있는 앱들이 libs를 사용할 수 있게 된다. 다만 apps를 등록하지 않았을 경우 앱들은 별도로 자신의 node_modules가 필요해진다.
 
 ## Workspace 사용시 장점
-<ul>1
-  <ul>2
+<ol>장점1
+<ol>장점2
     
 
 ## 정리
