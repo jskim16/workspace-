@@ -51,6 +51,8 @@ Worspace의 동작을 확인하기 위해 깃허브에 올라온 [데모](https:
 
 ![이미지](https://github.com/jskim16/workspace-/blob/main/img/root.PNG)
 
+위 프로젝트는 demo 브랜치에서 확인 가능하다.
+
 ## Workspace 사용시 장점
 * 모듈 설치의 시간과 용량을 줄일 수 있다.
 * 한 번의 동작으로 여러 프로젝트에서 돌아갈 모듈을 돌릴 수 있다.
