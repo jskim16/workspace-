@@ -11,7 +11,7 @@ Workspace는 SPA에서 각 앱들이 같은 모듈을 공유하고 서로를 참
 ## Workspace의 구현방법
 SPA프로젝트의 루트 폴더에 `package.json`을 생성하거나 이미 있는 것을 사용한다. 이곳에서 앱들을 Workspace에 등록한다.
 
-```vue.js
+```javascript
 //package.json
 {
   "private": true
