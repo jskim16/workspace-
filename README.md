@@ -34,7 +34,7 @@ Worspace의 동작을 확인하기 위해 깃허브에 올라온 [데모](https:
 
 ## Workspace구현
 루트 폴더에 Host(layout), Remote(home), Remote2(sub)가 되는 프로젝트가 있다. Workspace를 사용하지 않는다면 각 프로젝트마다 노드모듈을 설치해 실행시키겠지만 루트 폴더의 `package.json`에서 프로젝트들을 등록하고 모듈들을 한 번에 관리할 수 있다.
-### package.json
+#### package.json
 ```vue.js
 {
   "private": true,
@@ -47,7 +47,7 @@ Worspace의 동작을 확인하기 위해 깃허브에 올라온 [데모](https:
   ]
 }
 ```
-
+루트에서 `yarn isntall`을 하면 루트에 노드 모듈과 yarn.lock 파일이 생성되고 각 프로젝트 내의 노드 모듈 폴더에는 프로젝트마다 필요한 모듈만 설치되어 있는 것을 확인할 수 있다.
 
 ## Workspace 사용시 장점
 * 모듈 설치의 시간과 용량을 줄일 수 있다.
