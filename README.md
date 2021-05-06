@@ -36,7 +36,7 @@ Worspace의 동작을 확인하기 위해 깃허브에 올라온 [데모](https:
 루트 폴더에 Host(layout), Remote(home), Remote2(sub)가 되는 프로젝트가 있다. Workspace를 사용하지 않는다면 각 프로젝트마다 노드모듈을 설치해 실행시키겠지만 루트 폴더의 `package.json`에서 프로젝트들을 등록하고 모듈들을 한 번에 관리할 수 있다.
 ### package.json
 ```
-{
+{json
   "private": true,
   "scripts": {},
   "devDependencies": {},
