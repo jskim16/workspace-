@@ -48,6 +48,7 @@ Worspace의 동작을 확인하기 위해 깃허브에 올라온 [데모](https:
 }
 ```
 루트에서 `yarn isntall`을 하면 루트에 노드 모듈과 yarn.lock 파일이 생성되고 각 프로젝트 내의 노드 모듈 폴더에는 프로젝트마다 필요한 모듈만 설치되어 있는 것을 확인할 수 있다.
+
 ![이미지](https://github.com/jskim16/workspace-/blob/main/img/root.PNG)
 
 ## Workspace 사용시 장점
