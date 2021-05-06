@@ -11,7 +11,7 @@ Workspace는 SPA에서 각 앱들이 같은 모듈을 공유하고 서로를 참
 ## Workspace의 구현방법
 SPA프로젝트의 루트 폴더에 `package.json`을 생성하거나 이미 있는 것을 사용한다. 이곳에서 앱들을 Workspace에 등록한다.
 
-```json
+```vue.js
 //package.json
 {
   "private": true
@@ -35,7 +35,7 @@ Worspace의 동작을 확인하기 위해 깃허브에 올라온 [데모](https:
 ## Workspace구현
 루트 폴더에 Host(layout), Remote(home), Remote2(sub)가 되는 프로젝트가 있다. Workspace를 사용하지 않는다면 각 프로젝트마다 노드모듈을 설치해 실행시키겠지만 루트 폴더의 `package.json`에서 프로젝트들을 등록하고 모듈들을 한 번에 관리할 수 있다.
 ### package.json
-```json
+```vue.js
 {
   "private": true,
   "scripts": {},
@@ -46,7 +46,6 @@ Worspace의 동작을 확인하기 위해 깃허브에 올라온 [데모](https:
     "sub"
   ]
 }
-
 ```
 
 
